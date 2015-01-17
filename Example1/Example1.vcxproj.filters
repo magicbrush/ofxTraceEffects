@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxTraceEffects\src\ofxTraceEffects.cpp">
+      <Filter>addons\ofxTraceEffects\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ofxTraceRippleEffects.cpp">
+      <Filter>addons\ofxTraceEffects\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTraceEffects">
+      <UniqueIdentifier>{011A8BBD-6A16-4B48-3DEC-D4AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxTraceEffects\src">
+      <UniqueIdentifier>{C4961D13-3093-7EC1-5C34-2E1D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxTraceEffects\src\ofxTraceEffects.h">
+      <Filter>addons\ofxTraceEffects\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ofxTraceRippleEffects.h">
+      <Filter>addons\ofxTraceEffects\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+</Project>
