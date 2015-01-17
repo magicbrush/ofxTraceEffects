@@ -4,6 +4,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+	resizeFBO(ofGetWidth(),ofGetHeight());
 	te = new ofxTraceRippleEffect;
 }
 
@@ -14,7 +15,10 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+	F.begin();
 	te->draw();
+	F.end();
+	F.draw(0,0,ofGetWidth(),ofGetHeight());
 }
 
 //--------------------------------------------------------------
@@ -60,4 +64,12 @@ void ofApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
+}
+
+void ofApp::resizeFBO( int param1, int param2 )
+{
+	F.allocate(param1,param2,GL_RGBA16F);
+	F.begin();
+	ofClear(0,0,0,0);
+	F.end();
 }

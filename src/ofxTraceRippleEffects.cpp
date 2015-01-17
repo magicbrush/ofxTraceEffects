@@ -76,11 +76,11 @@ ofxTraceRippleEffect::Ripple::~Ripple()
 void ofxTraceRippleEffect::Ripple::draw()
 {
 	ofPushStyle();
-	ofFloatColor C(0.0f,0.0f,0.0f,ofClamp(Life/5.0f,0.0f,1.0f));
+	ofFloatColor C(0.0f,0.0f,0.0f,ofClamp(Life/10.0f,0.0f,1.0f));
 	ofSetColor(C);
 	ofSetLineWidth(Life/2.0f);
 	ofNoFill();
-	ofCircle(Pos,Life*3.0f);
+	ofCircle(Pos,200.0/(Life*3.0f+0.5f));
 	ofPopStyle();
 }
 
